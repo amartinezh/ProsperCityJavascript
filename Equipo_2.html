@@ -1,0 +1,33 @@
+<HTML>
+<HEAD>
+    <TITLE>Nombre de mes</TITLE>
+<BODY bgcolor="peru">
+    <CENTER>
+        <h2>Ejemplo de una p&aacute;gina con calendario que da el mes en letra</h2>
+        <script language="JavaScript">
+            var hoy = new Date();
+            dia = hoy.getDate();
+            mes = hoy.getMonth();
+            ano = hoy.getYear() + 1900;
+
+            if (mes == "0") nombremes = "<font color=#FF0000 size 5>enero</font>";
+            else if (mes == "1") nombremes = "<font color=#FF0000 size 5>febrero</font>";
+            else if (mes == "2") nombremes = "<font color=#FF0000 SIZE=5>marzo</font>";
+            else if (mes == "3") nombremes = "<font color=#FF0000 SIZE=5>abril</font>";
+            else if (mes == "4") nombremes = "<font color=#FF0000 SIZE=5>mayo</font>";
+            else if (mes == "5") nombremes = "<font color=#FF0000 SIZE=5>junio</font>";
+            else if (mes == "6") nombremes = "<font color=#FF0000 SIZE=5>julio</font>";
+            else if (mes == "7") nombremes = "<font color=#FF0000 SIZE=5>agosto</font>";
+            else if (mes == "8") nombremes = "<font color=#FF0000 SIZE=5>septiembre</font>";
+            else if (mes == "9") nombremes = "<font color=#FF0000 SIZE=5>octubre</font>";
+            else if (mes == "10") nombremes = "<font color=#FF0000 SIZE=5>noviembre</font>";
+            else nombremes = "<font color=#FF0000 SIZE=5>diciembre</font>";
+
+            document.write(dia);
+            document.write(" de ");
+            document.write(nombremes);
+            document.write(" de ");
+            document.write(ano);
+        </script>
+</BODY>
+</HTML>
